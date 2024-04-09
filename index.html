@@ -16,7 +16,7 @@
 
 <h2>Advising Form</h2>
 
-<form action="thankyou.html" method="post">
+<form action="thankyou.html" method="printQuery">
 
   <div class="row">
     <div class="col">
@@ -33,68 +33,75 @@
     </div>
   </div>
 
-  <div class="row">
+ <div class="row">
     <div class="col">
-      <label for="teacher">Teacher:</label>
-      <select id="teacher" name="teacher">
-        <option value="Tiffany Ford">Tiffany Ford</option>
-        <option value="Kirsten Markley">Kirsten Markley</option>
-        <option value="Jackson Lewis">Jackson Lewis</option>
-      </select>
+        <label for="teacher">Teacher:</label>
+        <select id="teacher" name="teacher">
+            <option value="Tiffany Ford">Tiffany Ford</option>
+            <option value="Kirsten Markley">Kirsten Markley</option>
+            <option value="Jackson Lewis">Jackson Lewis</option>
+        </select>
     </div>
     <div class="col">
-      <label for="month">Month:</label>
-      <select id="month" name="month">
-        <option value="January">January</option>
-        <option value="February">February</option>
-        <option value="March">March</option>
-        <option value="April">April</option>
-        <option value="May">May</option>
-        <option value="June">June</option>
-        <option value="July">July</option>
-        <option value="August">August</option>
-        <option value="September">September</option>
-        <option value="October">October</option>
-        <option value="November">November</option>
-        <option value="December">December</option>
-      </select>
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
     </div>
     <div class="col">
-      <label for="day">Day:</label>
-      <input type="number" id="day" name="day" min="1" max="31" required>
+        <label for="day">Day:</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
     </div>
-    <div class="col">
-      <label for="time">Time:</label>
-      <input type="radio" id="am" name="time" value="am"> AM
-      <input type="radio" id="pm" name="time" value="pm"> PM
-    </div>
-  </div>
+	<div class="row">
+	<div class="col">
+		<label for="time">Time:</label>
+		<div class="radio-buttons">
+			<input type="radio" id="am" name="time" value="am"> <label for="am">AM</label>
+			<input type="radio" id="pm" name="time" value="pm"> <label for="pm">PM</label>
+		</div>
+	</div>
+	</div>
 
-  <div class="row">
-    <div class="row">
-      <label for="classes">Classes:</label><br>
-      <input type="checkbox" id="math" name="classes" value="Math"> Math<br>
-      <input type="checkbox" id="science" name="classes" value="Science"> Science<br>
-      <input type="checkbox" id="history" name="classes" value="History"> History<br>
-      <input type="checkbox" id="english" name="classes" value="English"> English<br>
-      <input type="checkbox" id="art" name="classes" value="Art"> Art<br>
-    </div>
-  </div>
 
+<div class="row">
   <div class="row">
-    <div class="col">
-      <label for="notes">Notes:</label><br>
-      <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
-    </div>
+    <label for="classes">Classes:</label><br>
+    <input type="checkbox" id="cp" name="classes" value="C Plus Plus"> CIS-170<br>
+    <input type="checkbox" id="wd" name="classes" value="Web Design"> CIS-230<br>
+    <input type="checkbox" id="cf" name="classes" value="Cloud Fundamentals"> CIS-135<br>
+    <input type="checkbox" id="vn" name="classes" value="Virtual Networks"> NET-104<br>
+    <input type="checkbox" id="cs" name="classes" value="C Sharp"> CIS-216<br>
   </div>
+</div>
 
-  <div class="row">
-    <div class="col">
-      <input type="submit" value="Submit">
-    </div>
+<div class="row">
+  <div class="col">
+    <label for="notes">Notes:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
   </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <input type="submit" value="Submit">
+  </div>
+</div>
+
+<footer>
+  &copy; 2024 ClassTrack LLC
+</footer>
 
 </form>
-
 </body>
 </html>
